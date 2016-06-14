@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HMHeadLineControllerViewController.h
 //  我的网易新闻
 //
 //  Created by Marcello on 16/6/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HMHeadLineController : UIViewController
 
 @end
-
