@@ -13,6 +13,8 @@
 
 @interface HMNavigationController ()
 
+
+
 @end
 
 @implementation HMNavigationController
@@ -21,13 +23,17 @@
     [super viewDidLoad];
 
     HMMainViewController *main = [[HMMainViewController alloc] init];
-    
-    main.view.frame = self.view.bounds;
+
+    self.navigationBar.backgroundColor = [UIColor yellowColor];
     
     [self addChildViewController:main];
     
     [self.view addSubview:main.view];
     
+//    NSLog(@"self.view = %@",self.view);
+//    
+//    NSLog(@"navgaiotnbar = %@",self.navigationBar);
+     //NSLog(@"self.nacgationbar  =%@",NSStringFromCGRect(self.navigationBar.frame));
 }
 
 
