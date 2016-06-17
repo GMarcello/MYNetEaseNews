@@ -10,4 +10,7 @@
 
 @interface HMHeadLineController : UITableViewController
 
+@property (nonatomic, copy) NSString *URLString;
+
+
 @end

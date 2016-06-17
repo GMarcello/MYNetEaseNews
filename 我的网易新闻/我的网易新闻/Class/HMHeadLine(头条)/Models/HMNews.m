@@ -28,11 +28,13 @@
  */
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{}
 
-+ (void)newsLoadDataSucess:(void(^)(NSArray *newss))sucess faild:(void(^)(NSError *error))failed{
++ (void)newsLoadDataSucessWithURLString:(NSString *)URLString news:(void(^)(NSArray *news))sucess faild:(void(^)(NSError *error))failed{
     
     NSAssert(sucess != nil, @"不能为空..");
     
-    [[HMNetworkTool sharedNetworkTool] GET:@"article/headline/T1348647853363/0-20.html"  parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * responseObject) {
+   // NSString *url = [NSString stringWithFormat:@""];
+    
+    [[HMNetworkTool sharedNetworkTool] GET:URLString  parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * responseObject) {
         
         //NSLog(@"responseObject = %@",responseObject);
         

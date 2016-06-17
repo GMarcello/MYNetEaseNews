@@ -13,7 +13,9 @@
 
 @property (nonatomic, strong) HMChannel *channel;
 
+@property (nonatomic, assign) CGFloat scale;
 
 + (instancetype)initWithChannelText:(NSString *)text;
+
 
 @end

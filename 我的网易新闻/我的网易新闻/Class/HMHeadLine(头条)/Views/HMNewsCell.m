@@ -35,18 +35,13 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:identifi owner:nil options:nil] lastObject];
     }
 
-    
-
-    
-    
     return cell;
 }
 
 
 - (void)setNews:(HMNews *)news{
     _news = news;
-    
-    
+
     [self.imageButton sd_setBackgroundImageWithURL:[NSURL URLWithString:news.imgsrc] forState:UIControlStateNormal];
 
 

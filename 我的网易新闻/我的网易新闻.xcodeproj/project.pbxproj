@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B1D2667FDB494A69078F091 /* libPods-我的网易新闻UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B195371AD5E6AB4DEF4FFD /* libPods-我的网易新闻UITests.a */; };
 		58100D06FF71764AA0CFF6EF /* libPods-我的网易新闻.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1039C7ECB41A5D622161DA6A /* libPods-我的网易新闻.a */; };
+		AD0570BF1D12BE3B00AAB84C /* HMMainConllectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0570BE1D12BE3B00AAB84C /* HMMainConllectionCell.m */; };
 		AD0E843A1D10F7DA00F44B61 /* HMLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E84391D10F7DA00F44B61 /* HMLoopView.m */; };
 		AD0E843D1D10F9A500F44B61 /* HMNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E843C1D10F9A500F44B61 /* HMNetworkTool.m */; };
 		AD0E84401D10FB8B00F44B61 /* HMLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0E843F1D10FB8B00F44B61 /* HMLoop.m */; };
@@ -59,6 +60,8 @@
 		74C75FFE79011CFC5B22B05A /* Pods-我的网易新闻Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-我的网易新闻Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-我的网易新闻Tests/Pods-我的网易新闻Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D10E3A5FB6272E5B65383A9 /* Pods-我的网易新闻.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-我的网易新闻.release.xcconfig"; path = "Pods/Target Support Files/Pods-我的网易新闻/Pods-我的网易新闻.release.xcconfig"; sourceTree = "<group>"; };
 		A5B195371AD5E6AB4DEF4FFD /* libPods-我的网易新闻UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-我的网易新闻UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0570BD1D12BE3B00AAB84C /* HMMainConllectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMainConllectionCell.h; sourceTree = "<group>"; };
+		AD0570BE1D12BE3B00AAB84C /* HMMainConllectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMainConllectionCell.m; sourceTree = "<group>"; };
 		AD0E84381D10F7DA00F44B61 /* HMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLoopView.h; sourceTree = "<group>"; };
 		AD0E84391D10F7DA00F44B61 /* HMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLoopView.m; sourceTree = "<group>"; };
 		AD0E843B1D10F9A500F44B61 /* HMNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNetworkTool.h; sourceTree = "<group>"; };
@@ -323,6 +326,8 @@
 			children = (
 				AD3AA85A1D102E6900C70F82 /* HMLable.h */,
 				AD3AA85B1D102E6900C70F82 /* HMLable.m */,
+				AD0570BD1D12BE3B00AAB84C /* HMMainConllectionCell.h */,
+				AD0570BE1D12BE3B00AAB84C /* HMMainConllectionCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -642,6 +647,7 @@
 				AD3AA7C41D101A8300C70F82 /* AppDelegate.m in Sources */,
 				AD0E84401D10FB8B00F44B61 /* HMLoop.m in Sources */,
 				AD0E84901D11915500F44B61 /* HMNews.m in Sources */,
+				AD0570BF1D12BE3B00AAB84C /* HMMainConllectionCell.m in Sources */,
 				AD3AA8591D10252600C70F82 /* HMChannel.m in Sources */,
 				AD0E848D1D112BEE00F44B61 /* HMCollectionViewCell.m in Sources */,
 				AD3AA85C1D102E6900C70F82 /* HMLable.m in Sources */,

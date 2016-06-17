@@ -47,6 +47,6 @@
 
 + (instancetype)newsWithDict:(NSDictionary *)dict;
 
-+ (void)newsLoadDataSucess:(void(^)(NSArray *news))sucess faild:(void(^)(NSError *error))failed;
++ (void)newsLoadDataSucessWithURLString:(NSString *)URLString news:(void(^)(NSArray *news))sucess faild:(void(^)(NSError *error))failed;
 
 @end

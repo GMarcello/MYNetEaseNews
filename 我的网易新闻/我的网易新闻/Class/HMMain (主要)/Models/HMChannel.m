@@ -20,6 +20,15 @@
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{}
 
+-(void)setTid:(NSString *)tid{
+    
+    _tid = [tid copy];
+    
+    _URLString = [NSString stringWithFormat:@"article/headline/%@/0-20.html",tid];
+    
+   // NSLog(@"self.URLString = %@" ,_URLString);
+}
+
 
 + (NSArray *)loadChannelData{
     
@@ -48,9 +57,7 @@
     //排序
 
     return[mtuChannel sortedArrayUsingComparator:^NSComparisonResult(HMChannel* obj1, HMChannel* obj2) {
-        
-       
-        //NSLog(@"---------------------%zd",[obj1.tid compare:obj2.tid]);
+
          return [obj1.tid compare:obj2.tid];
     }];
 

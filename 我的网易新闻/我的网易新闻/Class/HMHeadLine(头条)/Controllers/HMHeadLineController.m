@@ -40,23 +40,35 @@
         
     }];
     
+
+
+
+}
+
+/**
+ *  根据headLine的URl属性更新数据
+ *
+ *  @param URLString <#URLString description#>
+ */
+- (void)setURLString:(NSString *)URLString{
+    _URLString = URLString;
     
-    [HMNews newsLoadDataSucess:^(NSArray *news) {
+    [self loadNewsData];
+}
+
+
+- (void)loadNewsData{
+ 
+    
+    [HMNews newsLoadDataSucessWithURLString:self.URLString news:^(NSArray *news) {
         self.news = news;
         
         [self.tableView reloadData];
-         //NSLog(@"---------%@",self.news);
+        
     } faild:^(NSError *error) {
-       
+        
         
     }];
-    
-    
-    
-
-//    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 375, 230)];
-    
-
 }
 
 /**
@@ -74,6 +86,7 @@
     self.tableView.tableHeaderView =  [loopView initWithloopViewWithURL:urls title:titles];
 }
 
+#pragma mark - tableView的代理方法
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.news.count;
@@ -93,7 +106,7 @@
     
     HMNews *news = self.news[indexPath.row];
     
-    NSLog(@"row.height = %f",news.rowheight);
+   // NSLog(@"row.height = %f",news.rowheight);
     
     return news.rowheight;
 }

@@ -24,16 +24,15 @@
 
     HMMainViewController *main = [[HMMainViewController alloc] init];
 
-    self.navigationBar.backgroundColor = [UIColor yellowColor];
+    self.navigationBar.barTintColor = [UIColor yellowColor];
+
+    self.navigationBar.translucent = NO;
     
-    [self addChildViewController:main];
+    [self initWithRootViewController:main];
     
     [self.view addSubview:main.view];
     
-//    NSLog(@"self.view = %@",self.view);
-//    
-//    NSLog(@"navgaiotnbar = %@",self.navigationBar);
-     //NSLog(@"self.nacgationbar  =%@",NSStringFromCGRect(self.navigationBar.frame));
+
 }
 
 

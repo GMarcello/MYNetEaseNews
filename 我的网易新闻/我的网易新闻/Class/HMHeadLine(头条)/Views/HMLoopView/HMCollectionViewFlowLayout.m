@@ -21,12 +21,16 @@
     
     self.minimumInteritemSpacing = 0;
     
+    
     //滚动的方向
     self.scrollDirection =  UICollectionViewScrollDirectionHorizontal;
     
     self.collectionView.pagingEnabled = YES;
     
     self.collectionView.showsVerticalScrollIndicator = NO;
+    
+    
+    //NSLog(@"self.superView = %@",self.superclass);
     
 }
 

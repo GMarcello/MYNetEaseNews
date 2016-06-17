@@ -117,7 +117,7 @@
   
     NSUInteger count = self.urls.count > 1 ? self.urls.count *3: self.urls.count;
     
-      NSLog(@"self.urls.count = %zd",count);
+     // NSLog(@"self.urls.count = %zd",count);
     return count;
 }
 

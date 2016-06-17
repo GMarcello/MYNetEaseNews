@@ -14,6 +14,8 @@
 
 @property (nonatomic, copy) NSString *tname;
 
+@property (nonatomic, copy) NSString *URLString;
+
 + (instancetype)channelWithDict:(NSDictionary *)dict;
 
 
